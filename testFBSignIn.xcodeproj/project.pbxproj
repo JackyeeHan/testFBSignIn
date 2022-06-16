@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBACC21F5442BE2EE65D0F1F /* Pods_testFBSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3931F34557BE016EF442A97 /* Pods_testFBSignIn.framework */; };
 		E3FDC54E285A7183009BC1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDC54D285A7183009BC1E3 /* AppDelegate.swift */; };
 		E3FDC550285A7183009BC1E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDC54F285A7183009BC1E3 /* SceneDelegate.swift */; };
 		E3FDC552285A7183009BC1E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDC551285A7183009BC1E3 /* ViewController.swift */; };
 		E3FDC555285A7183009BC1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FDC553285A7183009BC1E3 /* Main.storyboard */; };
 		E3FDC557285A7184009BC1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FDC556285A7184009BC1E3 /* Assets.xcassets */; };
 		E3FDC55A285A7184009BC1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FDC558285A7184009BC1E3 /* LaunchScreen.storyboard */; };
+		E3FDC562285A7378009BC1E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3FDC561285A7378009BC1E3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08687A4FC28DE1EC0A14853E /* Pods-testFBSignIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testFBSignIn.debug.xcconfig"; path = "Target Support Files/Pods-testFBSignIn/Pods-testFBSignIn.debug.xcconfig"; sourceTree = "<group>"; };
+		276D2B9B2B245DBAB51B6541 /* Pods-testFBSignIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testFBSignIn.release.xcconfig"; path = "Target Support Files/Pods-testFBSignIn/Pods-testFBSignIn.release.xcconfig"; sourceTree = "<group>"; };
+		C3931F34557BE016EF442A97 /* Pods_testFBSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testFBSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FDC54A285A7183009BC1E3 /* testFBSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFBSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FDC54D285A7183009BC1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FDC54F285A7183009BC1E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		E3FDC556285A7184009BC1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3FDC559285A7184009BC1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3FDC55B285A7184009BC1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FDC561285A7378009BC1E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3FDC563285A7F33009BC1E3 /* testFBSignIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testFBSignIn.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBACC21F5442BE2EE65D0F1F /* Pods_testFBSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0FB4EA7BFD06C1DF2582B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3931F34557BE016EF442A97 /* Pods_testFBSignIn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC0C3614C325CD269ABCEB4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08687A4FC28DE1EC0A14853E /* Pods-testFBSignIn.debug.xcconfig */,
+				276D2B9B2B245DBAB51B6541 /* Pods-testFBSignIn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E3FDC541285A7183009BC1E3 = {
 			isa = PBXGroup;
 			children = (
 				E3FDC54C285A7183009BC1E3 /* testFBSignIn */,
 				E3FDC54B285A7183009BC1E3 /* Products */,
+				CC0C3614C325CD269ABCEB4F /* Pods */,
+				A0FB4EA7BFD06C1DF2582B5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,8 @@
 				E3FDC556285A7184009BC1E3 /* Assets.xcassets */,
 				E3FDC558285A7184009BC1E3 /* LaunchScreen.storyboard */,
 				E3FDC55B285A7184009BC1E3 /* Info.plist */,
+				E3FDC561285A7378009BC1E3 /* GoogleService-Info.plist */,
+				E3FDC563285A7F33009BC1E3 /* testFBSignIn.entitlements */,
 			);
 			path = testFBSignIn;
 			sourceTree = "<group>";
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3FDC55E285A7184009BC1E3 /* Build configuration list for PBXNativeTarget "testFBSignIn" */;
 			buildPhases = (
+				A55FCE5958550646254A9F3E /* [CP] Check Pods Manifest.lock */,
 				E3FDC546285A7183009BC1E3 /* Sources */,
 				E3FDC547285A7183009BC1E3 /* Frameworks */,
 				E3FDC548285A7183009BC1E3 /* Resources */,
+				D547EA69C4A84999F13DDBA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +157,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FDC55A285A7184009BC1E3 /* LaunchScreen.storyboard in Resources */,
+				E3FDC562285A7378009BC1E3 /* GoogleService-Info.plist in Resources */,
 				E3FDC557285A7184009BC1E3 /* Assets.xcassets in Resources */,
 				E3FDC555285A7183009BC1E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A55FCE5958550646254A9F3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testFBSignIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D547EA69C4A84999F13DDBA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testFBSignIn/Pods-testFBSignIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testFBSignIn/Pods-testFBSignIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testFBSignIn/Pods-testFBSignIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3FDC546285A7183009BC1E3 /* Sources */ = {
@@ -282,9 +356,11 @@
 		};
 		E3FDC55F285A7184009BC1E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08687A4FC28DE1EC0A14853E /* Pods-testFBSignIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = testFBSignIn/testFBSignIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V7SZ2P38T;
@@ -310,9 +386,11 @@
 		};
 		E3FDC560285A7184009BC1E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276D2B9B2B245DBAB51B6541 /* Pods-testFBSignIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = testFBSignIn/testFBSignIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V7SZ2P38T;
